@@ -4,41 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
     <main>
+        <img src="./main.png" class="background" alt="background">
+        <!-- <div class="container ">
+            <button type="button" class="colorBlue open" >
+                <img src="./open.png" alt="open">
+            </button>
 
-        <div class="wrapper colorBlue">
-            <label>
-                <input type="radio" name="radiobutton" value="">
-                <span>+</span>
-            </label>
-            
-            <div class="signature ">
-                Стадион
+            <div class="signature colorBlue">
+                <div><img src="./close.png" alt="close"></div>
+                <span>Стадион</span>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <button type="button" class="colorGreen open" onclick="open_close_btn('coliseum')">
+                <img src="./open.png" alt="open">
+            </button>
+
+            <div class="signature colorGreen" id="coliseum" onclick="removeSignatureActive('coliseum')">
+                <img src="./close.png" alt="close">
+                <span>Коллизей</span>
             </div>
         </div>
 
-        <div class="wrapper colorGreen">
-            <label>
-                <input type="radio" name="radiobutton" value="">
-                <span>+</span>
-            </label>
-            <div class="signature ">
-                Коллизей
-            </div>
-        </div>
+        <div class="container bridge">
+            <button type="button" class="colorBlue open" onclick="open_close_btn('bridge')">
+                <img src="./open.png" alt="open">
+            </button>
 
-        <div class="wrapper colorBlue">
-            <label>
-                <input type="radio" name="radiobutton" value="">
-                <span>+</span>
-            </label>
-            <div class="signature ">
-                Мост
+            <div class="signature colorBlue" id="bridge" onclick="removeSignatureActive('bridge')">
+                <img src="./close.png" alt="close">
+                <span>Мост</span>
             </div>
         </div>
 

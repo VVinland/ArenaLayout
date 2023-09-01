@@ -10,40 +10,116 @@
 
 <body>
     <main>
-        <img src="./main.png" class="background" alt="background">
-        <!-- <div class="container ">
-            <button type="button" class="colorBlue open" >
-                <img src="./open.png" alt="open">
+        <img src="./images/main.png" class="background" alt="background">
+        <div class="container stadium">
+            <button type="button" class="colorGreen open" onclick="open_close_btn('stadium')">
+                <img src="./images/open.png" alt="open">
             </button>
 
-            <div class="signature colorBlue">
-                <div><img src="./close.png" alt="close"></div>
+            <div class="inscription colorGreen" id="stadium" onclick="removeInscriptionActive('stadium')">
+                <img src="./images/close.png" alt="close">
                 <span>Стадион</span>
             </div>
-        </div> -->
+        </div>
 
-        <div class="container">
+        <div class="container coliseum">
             <button type="button" class="colorGreen open" onclick="open_close_btn('coliseum')">
-                <img src="./open.png" alt="open">
+                <img src="./images/open.png" alt="open">
             </button>
 
-            <div class="signature colorGreen" id="coliseum" onclick="removeSignatureActive('coliseum')">
-                <img src="./close.png" alt="close">
+            <div class="inscription colorGreen" id="coliseum" onclick="removeInscriptionActive('coliseum')">
+                <img src="./images/close.png" alt="close">
                 <span>Коллизей</span>
             </div>
         </div>
 
         <div class="container bridge">
             <button type="button" class="colorBlue open" onclick="open_close_btn('bridge')">
-                <img src="./open.png" alt="open">
+                <img src="./images/open.png" alt="open">
             </button>
 
-            <div class="signature colorBlue" id="bridge" onclick="removeSignatureActive('bridge')">
-                <img src="./close.png" alt="close">
+            <div class="inscription colorBlue" id="bridge" onclick="removeInscriptionActive('bridge')">
+                <img src="./images/close.png" alt="close">
                 <span>Мост</span>
             </div>
         </div>
 
+        <div class="container office">
+            <button type="button" class="colorBlue open" onclick="open_close_btn('office')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorBlue" id="office" onclick="removeInscriptionActive('office')">
+                <img src="./images/close.png" alt="close">
+                <span>Офис</span>
+            </div>
+        </div>
+
+        <div class="container house">
+            <button type="button" class="colorBlue open" onclick="open_close_btn('house')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorBlue" id="house" onclick="removeInscriptionActive('house')">
+                <img src="./images/close.png" alt="close">
+                <span>Жилой дом</span>
+            </div>
+        </div>
+
+        <div class="container column">
+            <button type="button" class="colorBlue open" onclick="open_close_btn('column')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorBlue" id="column" onclick="removeInscriptionActive('column')">
+                <img src="./images/close.png" alt="close">
+                <span>Колонна</span>
+            </div>
+        </div>
+
+        <div class="container embankment">
+            <button type="button" class="colorGreen open" onclick="open_close_btn('embankment')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorGreen" id="embankment" onclick="removeInscriptionActive('embankment')">
+                <img src="./images/close.png" alt="close">
+                <span>Набережная</span>
+            </div>
+        </div>
+
+        <div class="container part_a">
+            <button type="button" class="colorGreen open" onclick="open_close_btn('part_a')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorGreen" id="part_a" onclick="removeInscriptionActive('part_a')">
+                <img src="./images/close.png" alt="close">
+                <span>Часть а</span>
+            </div>
+        </div>
+
+        <div class="container part_b">
+            <button type="button" class="colorBlue open" onclick="open_close_btn('part_b')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorBlue" id="part_b" onclick="removeInscriptionActive('part_b')">
+                <img src="./images/close.png" alt="close">
+                <span>Часть б</span>
+            </div>
+        </div>
+
+        <div class="container hotel">
+            <button type="button" class="colorBlue open" onclick="open_close_btn('hotel')">
+                <img src="./images/open.png" alt="open">
+            </button>
+
+            <div class="inscription colorBlue" id="hotel" onclick="removeInscriptionActive('hotel')">
+                <img src="./images/close.png" alt="close">
+                <span>Отель</span>
+            </div>
+        </div>
 
     </main>
 

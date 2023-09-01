@@ -14,6 +14,7 @@ main {
     height: 100vh;
 }
 
+/*Задний фон*/
 .background {
     min-height: 100%;
     min-width: 640px;
@@ -31,26 +32,24 @@ main {
 }
 
 .container {
-    display: flex;
-    align-items: center;
     position: absolute;
-    /*С намерением двигать*/
 }
 
 main .container .open {
     border-radius: 50%;
     height: 41px;
     width: 41px;
-    opacity: 0.9;
-    /*Подумать между 0.7 и 0.9*/
+    opacity: 70%; 
     border: none;
 }
 
-.signature {
+/*Вылезающиая надпись с начало скрыта*/
+.inscription {
     display: none;
 }
 
-.signatureActive{
+/*после добавление signatureActive надпись появляется*/
+.inscriptionActive {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +84,54 @@ main .container .signature {
     background: #6ABF4B;
 }
 
+/*Расположение кнопок на карте*/
+/*При высоте экрана в 1080px и ширине экрана от 1920px до 1280px кнопки отображаются в пределах построек*/
 .bridge {
-    top: 714px;
-    left: 446px; 
+    top: 66.1%;
+    left: 23.229%;
+}
+
+.stadium {
+    top: 44.629%;
+    left: 35.78%;
+}
+
+.coliseum {
+    top: 37.4%;
+    left: 59.79%;
+}
+
+.office {
+    top: 26.1%;
+    left: 30.2%;
+}
+
+.house {
+    top: 20.8%;
+    left: 71.5%;
+}
+
+.column {
+    top: 58.24%;
+    left: 56.3%;
+}
+
+.embankment {
+    top: 73.14%;
+    left: 57.65%;
+}
+
+.part_a {
+    top: 61.94%;
+    left: 68.02%;
+}
+
+.part_b {
+    top: 66.018%;
+    left: 82.968%;
+}
+
+.hotel {
+    top: 43.98%;
+    left: 73.64%;
 }

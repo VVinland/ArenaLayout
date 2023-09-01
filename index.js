@@ -1,38 +1,40 @@
-const buttons = document.querySelectorAll('button');
-const containers = document.querySelectorAll('.containers');
-const signatures = document.querySelectorAll('.signature');
+const inscriptions = document.querySelectorAll('.inscription');
 const body = document.body;
 
 
-function open_close_btn(id) {
+function open_close_btn(id) { 
     const element = document.getElementById(id);
-    closeSignatures(element);
-    element.classList.toggle('signatureActive');
+    closeInscriptions(element);
+    element.classList.toggle('inscriptionActive');
 }
 
-function removeSignatureActive(id) {
+function removeInscriptionActive(id) { // при нажатии на надпись она закроется
     const element = document.getElementById(id);
-    element.classList.remove('signatureActive');
+    element.classList.remove('inscriptionActive');
 }
 
+// при нажатии на любое место кроме кнопок или вылезающей надписи
+// открытая кнопка закроется
 body.addEventListener("click", function (event) {
-
+    
     if (event.target.nodeName === "MAIN") {
-        closeSignatures();
+        closeInscriptions();
     }
 
     return;
 })
 
-function closeSignatures(element) {
+// данная функция закрывает либо все кнопки,
+// либо все кнопки кроме той на которую нажали
+function closeInscriptions(element) {
 
-    signatures.forEach(function (item) {
+    inscriptions.forEach(function (item) {
         if (element === item) {
             return;
         }
 
-        if (item.classList.contains('signatureActive')) {
-            item.classList.remove('signatureActive');
+        if (item.classList.contains('inscriptionActive')) {
+            item.classList.remove('inscriptionActive');
         }
     })
 }
